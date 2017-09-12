@@ -1,0 +1,271 @@
+
+\section{Genotype calling, really?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype calling}
+
+	\begin{columns}
+	
+    	\column{0.6\textwidth}   
+
+		\begin{center}
+			\begin{tabular}{c | c}
+			Genotype & Likelihood (log10)\\
+    		\hline
+	    	AA & -2.49\\
+    		AC & -3.38\\
+    		AG & -1.22\\
+    		AT & -3.38\\
+            CC & -9.91\\
+            CG & -7.74\\
+            CT & -9.91\\
+            GG & -7.44\\
+            GT & -7.74\\
+            TT & -9.91\\
+        	\hline
+			\end{tabular}
+       	\end{center}
+
+		\column{0.4\textwidth}
+
+		AAAG \& $\epsilon=0.01$
+
+		\begin{block}{}
+			What is the genotype here?
+		\end{block}
+
+	\end{columns}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype calling}
+
+	\begin{columns}
+	
+    	\column{0.6\textwidth}   
+
+		\begin{center}
+			\begin{tabular}{c | c}
+			Genotype & Likelihood (log10)\\
+    		\hline
+	    	AA & -2.49\\
+    		AC & -3.38\\
+    		\textbf{AG} & \textbf{-1.22}\\
+    		AT & -3.38\\
+            CC & -9.91\\
+            CG & -7.74\\
+            CT & -9.91\\
+            GG & -7.44\\
+            GT & -7.74\\
+            TT & -9.91\\
+        	\hline
+			\end{tabular}
+       	\end{center}
+
+		\column{0.4\textwidth}
+
+		AAAG \& $\epsilon=0.01$
+
+		What is the genotype? AG.
+
+		\begin{block}{Maximum Likelihood}
+			The simplest genotype caller: choose the genotype with the highest likelihood.
+		\end{block}
+
+	\end{columns}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Major and minor alleles}
+
+	\begin{block}{Likelihood function}
+		\begin{equation*}
+			\log P(D|G=A) = \sum_{i=1}^R \log L_{A_j,i}
+		\end{equation*}
+	\end{block}
+
+	AAAG \& $\epsilon=0.01$
+
+	\begin{center}
+		\begin{tabular}{c | c}
+		Allele & log-Likelihood\\
+    	\hline
+	    \textbf{A} & \textbf{-2.49}\\
+    	C & -3.38\\
+    	\textbf{G} & \textbf{-1.22}\\
+    	T & -3.38\\
+        \hline
+		\end{tabular}
+	\end{center}
+
+	We can reduce the genotype space to 3 entries (from 10).
+    
+}    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype likelihoods}
+
+	AAAG \& `5555` \& A,G alleles
+
+	\begin{center}
+		\begin{tabular}{c | c}
+		Genotype & log-Likelihood\\
+    		\hline
+	    	AA & -5.73\\
+    		AG & -2.80\\
+    		GG & -17.12\\
+        	\hline
+		\end{tabular}
+	\end{center}
+
+	Examples varying qualities and reads...
+    
+}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype likelihoods - example} 
+
+        AAAG \& `555\textbf{0}` \& A,G alleles
+
+        \begin{center}
+                \begin{tabular}{c | c}
+                Genotype & log-Likelihood\\
+        	\hline
+		\pause
+            	AA & -4.58\\
+        	AG & -2.81\\
+        	GG & -17.14\\
+        	\hline
+          	\end{tabular}
+        \end{center}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype likelihoods - example}
+
+        AAAG \& `555\textbf{K}` \& A,G alleles
+
+        \begin{center}
+                \begin{tabular}{c | c}
+                Genotype & log-Likelihood\\
+                \hline
+                \pause
+                AA & -10.80\\
+                AG & -2.80\\
+                GG & -17.11\\
+                \hline
+                \end{tabular}
+        \end{center}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype likelihoods - example}
+
+        AAAAAAAAAG \& `5555555550` \& A,G alleles
+
+        \begin{center}
+                \begin{tabular}{c | c}
+                Genotype & log-Likelihood\\
+                \hline
+                \pause
+                AA & -4.64\\
+                AG & -7.01\\
+                GG & -51.37\\
+                \hline
+                \end{tabular}
+        \end{center}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{NGS data uncertainty}
+
+	\begin{block}{Issue}
+		There is a notable amount of statistical uncertainty in assigning individual genotypes depending on the number of reads and their quality.
+		How can we deal with that when doing population genetics analysis (e.g. estimating genetic diversity)?
+	\end{block}
+
+	\begin{block}{Solutions}
+		\begin{enumerate}
+			\item let's pretend we don't have such uncertainty
+			\pause
+			\item genotype filtering
+			\item (a third way)
+		\end{enumerate}
+	\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Genotype likelihood ratio}
+
+	\begin{equation*}
+		\log_{10} \frac{L_{G(1)}}{L_{G(2)}} > t
+	\end{equation*}
+
+	i.e. $t=1$ meaning that the most likely genotype is 10 times more likely than the second most likely one
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Genotype posterior probability}
+
+	AAAG \& $\epsilon=0.01$ \& A,G alleles
+
+	\begin{center}
+		\begin{tabular}{c | c | c | c}
+		Genotype & Likelihood (log) & Prior & Posterior\\
+    	\hline
+	    AA & -5.73 & 1/3 & 0.05\\
+    	AG & -2.80 & 1/3 & 0.95\\
+    	GG & -17.12 & 1/3 & ~0\\
+        \hline
+		\end{tabular}
+	\end{center}
+
+	Only call genotypes if the largest probability is above a certain threshold (e.g. 0.95).
+
+	\begin{center}
+                Pros and cons?
+                \pause
+                \begin{itemize}
+                \item Yes: genotype are called with higher \textbf{confidence}
+                \item No: more \textbf{missing} data
+                \end{itemize}
+        \end{center}
+
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Exercise 1}
+
+	Simulate NGS data and calculate genotype likelihoods and probabilities.
+
+	Assess the amount of uncertainty and data missingness.
+
+\end{frame}
+
+
+

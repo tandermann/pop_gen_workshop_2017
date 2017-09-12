@@ -1,0 +1,63 @@
+\documentclass{beamer}
+
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{amsmath}
+
+\input{header.tex}
+
+\title{NGS data: Beauty and the Beast}
+\subtitle{{\it How to infer population genetics parameters from messy sequencing data}}
+\author{Matteo Fumagalli}
+\date{$12^{th}$ September 2017}
+
+\begin{document}
+
+\frame{\titlepage} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Goal of the day}
+
+	\begin{figure}
+		\includegraphics[scale=0.3]{Pics/bioinfo}
+	\end{figure}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Presentation outline}\tableofcontents}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% data and issues
+\include{introduction}
+
+% Genotype likelihoods
+\include{likelihoods}
+
+% Genotype calling
+\include{genotype}
+\include{geno_low}
+
+% Allele frequencies and SNP calling
+\include{snp}
+\include{snp_low}
+
+\include{design}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{ }
+\frame{
+ 	\vbox{}
+% 	\vfill
+	\begin{centering}
+	{\LARGE \usebeamercolor[fg]{title} Thank you for your attention}
+	\par
+	\end{centering}
+}
+
+\end{document}
