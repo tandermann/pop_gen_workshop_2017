@@ -24,14 +24,17 @@ def get_expected_value_from_list(max_option,upper,output_dir):
     plt.plot(range(1,len(average)+1), average,label="average across all throws")
     plt.axis([-upper/100, upper, 0.5, len(options)+len(options)/10])
     plt.plot((-upper/100, upper),(e, e), 'r-', linewidth=0.5)
+    plt.show()
     f.savefig(os.path.join(output_dir,"average_after_%s_throws_1_to_%s.pdf"%(upper,max_option)), bbox_inches='tight')
     return average
 
+'''
 # Settings
-repetitions = 100000
+repetitions = 10000
 output_dir = '/Users/tobias/Desktop/abc_modeling_course_tjarno_2017/own_plots'
 max_option = 6 #the function will create a list with integers from 1 to this value
 
 average = get_expected_value_from_list(max_option,repetitions,output_dir)
 
 print(average)
+'''
