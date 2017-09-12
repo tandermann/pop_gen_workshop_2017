@@ -94,7 +94,7 @@ def get_possible_combinations_for_n_sequences(n):
     return combo_list
 
 
-def tajimas_estimator_per_locus(input_dir,aln_format,snp_columns,valid_columns,min_num_seqs,outgroup):
+def tajimas_estimator_per_locus(input_dir,aln_format,snp_columns,valid_columns,min_num_seqs,outgroup,possible_combos):
     locus_tajima_dict = {}
     locus_snp_count_dict = {}
     for locus in snp_columns: #iterating over all loci
@@ -208,30 +208,31 @@ def join_and_plot_sfs_data(locus_derived_allele_counts_dict,output_dir):
     plt.ylabel('total count')
     plt.xlabel('occurrence of allele among all sequences')
     plt.title('site frequency spectrum for UCE loci of Topaza (n = %s)'%len(locus_derived_allele_counts_dict))
+    plt.show()
     f.savefig(os.path.join(output_dir,"site_frequency_spectrum_uces.pdf"), bbox_inches='tight')
 
 
 
-
+'''
 #______________________________SETTINGS________________________________________
-input_dir = '/Users/tobias/Desktop/abc_modeling_course_tjarno_2017/my_data/topaza-uce-allele-alignments'
+input_dir = './data/topaza-uce-allele-alignments'
 aln_format = 'fasta'
 min_num_seqs = 20
-output_dir = '/Users/tobias/Desktop/abc_modeling_course_tjarno_2017/my_data/'
+output_dir = './results/plots'
 outgroup = 'Florisuga'
+'''
 
 
-
-
+'''
 #______________________________WORKFLOW________________________________________
 alignment_list = read_aln_in_folder(input_dir,aln_format)
 valid_columns, snp_columns, removed_seqs = get_variable_positions(alignment_list,aln_format,min_num_seqs,outgroup)
 possible_combos = get_possible_combinations_for_n_sequences(int(min_num_seqs)-int(removed_seqs))
-locus_tajima_dict,locus_snp_count_dict = tajimas_estimator_per_locus(input_dir,aln_format,snp_columns,valid_columns,min_num_seqs,outgroup)
+locus_tajima_dict,locus_snp_count_dict = tajimas_estimator_per_locus(input_dir,aln_format,snp_columns,valid_columns,min_num_seqs,outgroup,possible_combos)
 plot_expected_heterozyosity(locus_tajima_dict,output_dir)
 locus_derived_allele_counts_dict = get_fsf_stats(input_dir,aln_format,outgroup,locus_snp_count_dict)
 join_and_plot_sfs_data(locus_derived_allele_counts_dict,output_dir)
-
+'''
 
 
 
