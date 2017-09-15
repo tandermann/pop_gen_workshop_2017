@@ -1,0 +1,48 @@
+Simulation parameters for current simulations
+=============================================
+
+
+Deme sizes
+Deme 0	1000
+Deme 1	1000
+
+
+Sample sizes
+Deme 0	20
+Deme 1	20
+
+Sample ages
+Deme 0	0
+Deme 1	0
+
+Growth rates
+Deme 0	0
+Deme 1	0
+
+
+Migration matrix
+Note that migration rates have been pre-multiplied by factor TDemeCollection::CTTimeUnit (1e+06)
+ 0.0000000 1000.0000000 
+1000.0000000  0.0000000 
+
+
+Historical events
+No historical events defined in input file ...
+
+
+Number of independent loci to simulate : 1
+With the same chromosomal structure
+
+Number of linkage blocks to simulate in structure 1: 1
+
+   10000 partially linked DNA loci:
+      recombination, mutation rates and transition rates :0.0000000000   0.0000000120   0.33000
+
+
+
+Random generator initialized with : 294989
+
+
+
+done in 0.135 secs
+

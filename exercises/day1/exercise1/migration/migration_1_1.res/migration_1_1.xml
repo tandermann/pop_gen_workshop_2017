@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="file:////home/tobias/abc_course_exercise/exercise1/ArlequinStyleSheet.xsl"?>
+<!--Arlequin results file-->
+
+<Arlequin>
+
+<data>
+
+
+</data>
+
+<header>
+Arlequin results
+</header>
+<data>
+
+</data>
+
+ <A NAME="11_09_17at17_11_43"></A> 
+<data>
+
+</data> <run time="11/09/17 at 17:11:43">
+
+////////////////////////////////////////////////////////////////////
+RUN NUMBER 1 (11/09/17 at 17:11:43)
+////////////////////////////////////////////////////////////////////
+
+</run> <data>
+</data>
+
+ <A NAME="11_09_17at17_11_43_run_information"></A> 
+<data>
+
+
+Project information:
+--------------------
+	NbSamples      =  2
+	DataType       =  DNA
+	GenotypicData  =  0
+
+</data> <title time="11/09/17 at 17:11:43">
+
+==============================
+Settings used for Calculations
+==============================
+
+</title> <data>
+
+ General settings:
+ -----------------
+        Deletion Weight                = 1
+        Transition Weight Weight       = 1
+        Tranversion Weight Weight      = 1
+        Epsilon Value                  = 1e-07
+        Significant digits for output  = 5
+        Infer haplotype definition from distance matrix
+        Alllowed level of missing data = 1
+
+ Active Tasks:
+ -------------
+
+    Standard indices:
+    -----------------
+
+    Molecular Diversity:
+    --------------------
+        Molecular Distance :Pairwise difference
+        GammaA Value       = 0
+        Theta estimators   : 
+            Theta(Hom)
+            Theta(S)
+            Theta(k)
+            Theta(Pi)
+
+    Tajima's selective neutrality test
+    -----------------------------------
+
+    Fu's Neutraliy test:
+    --------------------
+        No. of Simultated Samples = 0
+
+    Analysis of Molecular Variance:
+    -------------------------------
+        No. of Permutations = 0
+
+    Population pairwise Fst values:
+    -------------------------------
+        Compute pairwise differences
+        No. of permutations for significance = 0
+        No. of permutations for Mantel test  = 0
+
+       Distance matrix:
+            Compute distance matrix
+            Molecular distance : Pairwise difference
+            Gamma a value      = 0
+
+
+Number of usable loci for distance computation : 4
+Allowed level of missing data                  : 1
+
+List of usable loci :
+---------------------
+   1     2     3     4  
+
+List of loci with too much missing data :
+-----------------------------------------
+
+NONE
+
+</data>
+
+ <A NAME="11_09_17at17_11_43_shared haplotypes"></A> 
+<data>
+
+
+==================================================================
+== Checking for haplotypes shared among populations:
+==================================================================
+</data>
+
+ <A NAME="11_09_17at17_11_43_gr_shared0"></A> 
+<data>
+
+=====================================================================
+== Population : Sample 1
+===============
+
+   Haplotypes shared between "Sample 1" and "Sample 1":
+
+		1_1 = 1_3
+		1_1 = 1_5
+		1_1 = 1_6
+		1_1 = 1_7
+		1_1 = 1_10
+		1_1 = 1_11
+		1_1 = 1_13
+		1_1 = 1_14
+		1_1 = 1_15
+		1_1 = 1_16
+		1_1 = 1_17
+		1_1 = 1_18
+		1_1 = 1_19
+		1_1 = 1_20
+		1_2 = 1_4
+		1_2 = 1_9
+		1_3 = 1_5
+		1_3 = 1_6
+		1_3 = 1_7
+		1_3 = 1_10
+		1_3 = 1_11
+		1_3 = 1_13
+		1_3 = 1_14
+		1_3 = 1_15
+		1_3 = 1_16
+		1_3 = 1_17
+		1_3 = 1_18
+		1_3 = 1_19
+		1_3 = 1_20
+		1_4 = 1_9
+		1_5 = 1_6
+		1_5 = 1_7
+		1_5 = 1_10
+		1_5 = 1_11
+		1_5 = 1_13
+		1_5 = 1_14
+		1_5 = 1_15
+		1_5 = 1_16
+		1_5 = 1_17
+		1_5 = 1_18
+		1_5 = 1_19
+		1_5 = 1_20
+		1_6 = 1_7
+		1_6 = 1_10
+		1_6 = 1_11
+		1_6 = 1_13
+		1_6 = 1_14
+		1_6 = 1_15
+		1_6 = 1_16
+		1_6 = 1_17
+		1_6 = 1_18
+		1_6 = 1_19
+		1_6 = 1_20
+		1_7 = 1_10
+		1_7 = 1_11
+		1_7 = 1_13
+		1_7 = 1_14
+		1_7 = 1_15
+		1_7 = 1_16
+		1_7 = 1_17
+		1_7 = 1_18
+		1_7 = 1_19
+		1_7 = 1_20
+		1_10 = 1_11
+		1_10 = 1_13
+		1_10 = 1_14
+		1_10 = 1_15
+		1_10 = 1_16
+		1_10 = 1_17
+		1_10 = 1_18
+		1_10 = 1_19
+		1_10 = 1_20
+		1_11 = 1_13
+		1_11 = 1_14
+		1_11 = 1_15
+		1_11 = 1_16
+		1_11 = 1_17
+		1_11 = 1_18
+		1_11 = 1_19
+		1_11 = 1_20
+		1_13 = 1_14
+		1_13 = 1_15
+		1_13 = 1_16
+		1_13 = 1_17
+		1_13 = 1_18
+		1_13 = 1_19
+		1_13 = 1_20
+		1_14 = 1_15
+		1_14 = 1_16
+		1_14 = 1_17
+		1_14 = 1_18
+		1_14 = 1_19
+		1_14 = 1_20
+		1_15 = 1_16
+		1_15 = 1_17
+		1_15 = 1_18
+		1_15 = 1_19
+		1_15 = 1_20
+		1_16 = 1_17
+		1_16 = 1_18
+		1_16 = 1_19
+		1_16 = 1_20
+		1_17 = 1_18
+		1_17 = 1_19
+		1_17 = 1_20
+		1_18 = 1_19
+		1_18 = 1_20
+		1_19 = 1_20
+
+   Haplotypes shared between "Sample 1" and "Sample 2":
+
+		1_1 = 2_4
+		1_1 = 2_5
+		1_1 = 2_6
+		1_1 = 2_7
+		1_1 = 2_8
+		1_1 = 2_9
+		1_1 = 2_10
+		1_1 = 2_11
+		1_1 = 2_12
+		1_1 = 2_14
+		1_1 = 2_17
+		1_1 = 2_20
+		1_2 = 2_1
+		1_2 = 2_2
+		1_2 = 2_3
+		1_2 = 2_13
+		1_2 = 2_16
+		1_2 = 2_18
+		1_3 = 2_4
+		1_3 = 2_5
+		1_3 = 2_6
+		1_3 = 2_7
+		1_3 = 2_8
+		1_3 = 2_9
+		1_3 = 2_10
+		1_3 = 2_11
+		1_3 = 2_12
+		1_3 = 2_14
+		1_3 = 2_17
+		1_3 = 2_20
+		1_4 = 2_1
+		1_4 = 2_2
+		1_4 = 2_3
+		1_4 = 2_13
+		1_4 = 2_16
+		1_4 = 2_18
+		1_5 = 2_4
+		1_5 = 2_5
+		1_5 = 2_6
+		1_5 = 2_7
+		1_5 = 2_8
+		1_5 = 2_9
+		1_5 = 2_10
+		1_5 = 2_11
+		1_5 = 2_12
+		1_5 = 2_14
+		1_5 = 2_17
+		1_5 = 2_20
+		1_6 = 2_4
+		1_6 = 2_5
+		1_6 = 2_6
+		1_6 = 2_7
+		1_6 = 2_8
+		1_6 = 2_9
+		1_6 = 2_10
+		1_6 = 2_11
+		1_6 = 2_12
+		1_6 = 2_14
+		1_6 = 2_17
+		1_6 = 2_20
+		1_7 = 2_4
+		1_7 = 2_5
+		1_7 = 2_6
+		1_7 = 2_7
+		1_7 = 2_8
+		1_7 = 2_9
+		1_7 = 2_10
+		1_7 = 2_11
+		1_7 = 2_12
+		1_7 = 2_14
+		1_7 = 2_17
+		1_7 = 2_20
+		1_9 = 2_1
+		1_9 = 2_2
+		1_9 = 2_3
+		1_9 = 2_13
+		1_9 = 2_16
+		1_9 = 2_18
+		1_10 = 2_4
+		1_10 = 2_5
+		1_10 = 2_6
+		1_10 = 2_7
+		1_10 = 2_8
+		1_10 = 2_9
+		1_10 = 2_10
+		1_10 = 2_11
+		1_10 = 2_12
+		1_10 = 2_14
+		1_10 = 2_17
+		1_10 = 2_20
+		1_11 = 2_4
+		1_11 = 2_5
+		1_11 = 2_6
+		1_11 = 2_7
+		1_11 = 2_8
+		1_11 = 2_9
+		1_11 = 2_10
+		1_11 = 2_11
+		1_11 = 2_12
+		1_11 = 2_14
+		1_11 = 2_17
+		1_11 = 2_20
+		1_12 = 2_15
+		1_13 = 2_4
+		1_13 = 2_5
+		1_13 = 2_6
+		1_13 = 2_7
+		1_13 = 2_8
+		1_13 = 2_9
+		1_13 = 2_10
+		1_13 = 2_11
+		1_13 = 2_12
+		1_13 = 2_14
+		1_13 = 2_17
+		1_13 = 2_20
+		1_14 = 2_4
+		1_14 = 2_5
+		1_14 = 2_6
+		1_14 = 2_7
+		1_14 = 2_8
+		1_14 = 2_9
+		1_14 = 2_10
+		1_14 = 2_11
+		1_14 = 2_12
+		1_14 = 2_14
+		1_14 = 2_17
+		1_14 = 2_20
+		1_15 = 2_4
+		1_15 = 2_5
+		1_15 = 2_6
+		1_15 = 2_7
+		1_15 = 2_8
+		1_15 = 2_9
+		1_15 = 2_10
+		1_15 = 2_11
+		1_15 = 2_12
+		1_15 = 2_14
+		1_15 = 2_17
+		1_15 = 2_20
+		1_16 = 2_4
+		1_16 = 2_5
+		1_16 = 2_6
+		1_16 = 2_7
+		1_16 = 2_8
+		1_16 = 2_9
+		1_16 = 2_10
+		1_16 = 2_11
+		1_16 = 2_12
+		1_16 = 2_14
+		1_16 = 2_17
+		1_16 = 2_20
+		1_17 = 2_4
+		1_17 = 2_5
+		1_17 = 2_6
+		1_17 = 2_7
+		1_17 = 2_8
+		1_17 = 2_9
+		1_17 = 2_10
+		1_17 = 2_11
+		1_17 = 2_12
+		1_17 = 2_14
+		1_17 = 2_17
+		1_17 = 2_20
+		1_18 = 2_4
+		1_18 = 2_5
+		1_18 = 2_6
+		1_18 = 2_7
+		1_18 = 2_8
+		1_18 = 2_9
+		1_18 = 2_10
+		1_18 = 2_11
+		1_18 = 2_12
+		1_18 = 2_14
+		1_18 = 2_17
+		1_18 = 2_20
+		1_19 = 2_4
+		1_19 = 2_5
+		1_19 = 2_6
+		1_19 = 2_7
+		1_19 = 2_8
+		1_19 = 2_9
+		1_19 = 2_10
+		1_19 = 2_11
+		1_19 = 2_12
+		1_19 = 2_14
+		1_19 = 2_17
+		1_19 = 2_20
+		1_20 = 2_4
+		1_20 = 2_5
+		1_20 = 2_6
+		1_20 = 2_7
+		1_20 = 2_8
+		1_20 = 2_9
+		1_20 = 2_10
+		1_20 = 2_11
+		1_20 = 2_12
+		1_20 = 2_14
+		1_20 = 2_17
+		1_20 = 2_20
+
+---------------------------------------------------------------------
+
+</data>
+
+ <A NAME="11_09_17at17_11_43_gr_shared1"></A> 
+<data>
+
+=====================================================================
+== Population : Sample 2
+===============
+
+   Haplotypes shared between "Sample 2" and "Sample 1":
+
+		2_1 = 1_2
+		2_1 = 1_4
+		2_1 = 1_9
+		2_2 = 1_2
+		2_2 = 1_4
+		2_2 = 1_9
+		2_3 = 1_2
+		2_3 = 1_4
+		2_3 = 1_9
+		2_4 = 1_1
+		2_4 = 1_3
+		2_4 = 1_5
+		2_4 = 1_6
+		2_4 = 1_7
+		2_4 = 1_10
+		2_4 = 1_11
+		2_4 = 1_13
+		2_4 = 1_14
+		2_4 = 1_15
+		2_4 = 1_16
+		2_4 = 1_17
+		2_4 = 1_18
+		2_4 = 1_19
+		2_4 = 1_20
+		2_5 = 1_1
+		2_5 = 1_3
+		2_5 = 1_5
+		2_5 = 1_6
+		2_5 = 1_7
+		2_5 = 1_10
+		2_5 = 1_11
+		2_5 = 1_13
+		2_5 = 1_14
+		2_5 = 1_15
+		2_5 = 1_16
+		2_5 = 1_17
+		2_5 = 1_18
+		2_5 = 1_19
+		2_5 = 1_20
+		2_6 = 1_1
+		2_6 = 1_3
+		2_6 = 1_5
+		2_6 = 1_6
+		2_6 = 1_7
+		2_6 = 1_10
+		2_6 = 1_11
+		2_6 = 1_13
+		2_6 = 1_14
+		2_6 = 1_15
+		2_6 = 1_16
+		2_6 = 1_17
+		2_6 = 1_18
+		2_6 = 1_19
+		2_6 = 1_20
+		2_7 = 1_1
+		2_7 = 1_3
+		2_7 = 1_5
+		2_7 = 1_6
+		2_7 = 1_7
+		2_7 = 1_10
+		2_7 = 1_11
+		2_7 = 1_13
+		2_7 = 1_14
+		2_7 = 1_15
+		2_7 = 1_16
+		2_7 = 1_17
+		2_7 = 1_18
+		2_7 = 1_19
+		2_7 = 1_20
+		2_8 = 1_1
+		2_8 = 1_3
+		2_8 = 1_5
+		2_8 = 1_6
+		2_8 = 1_7
+		2_8 = 1_10
+		2_8 = 1_11
+		2_8 = 1_13
+		2_8 = 1_14
+		2_8 = 1_15
+		2_8 = 1_16
+		2_8 = 1_17
+		2_8 = 1_18
+		2_8 = 1_19
+		2_8 = 1_20
+		2_9 = 1_1
+		2_9 = 1_3
+		2_9 = 1_5
+		2_9 = 1_6
+		2_9 = 1_7
+		2_9 = 1_10
+		2_9 = 1_11
+		2_9 = 1_13
+		2_9 = 1_14
+		2_9 = 1_15
+		2_9 = 1_16
+		2_9 = 1_17
+		2_9 = 1_18
+		2_9 = 1_19
+		2_9 = 1_20
+		2_10 = 1_1
+		2_10 = 1_3
+		2_10 = 1_5
+		2_10 = 1_6
+		2_10 = 1_7
+		2_10 = 1_10
+		2_10 = 1_11
+		2_10 = 1_13
+		2_10 = 1_14
+		2_10 = 1_15
+		2_10 = 1_16
+		2_10 = 1_17
+		2_10 = 1_18
+		2_10 = 1_19
+		2_10 = 1_20
+		2_11 = 1_1
+		2_11 = 1_3
+		2_11 = 1_5
+		2_11 = 1_6
+		2_11 = 1_7
+		2_11 = 1_10
+		2_11 = 1_11
+		2_11 = 1_13
+		2_11 = 1_14
+		2_11 = 1_15
+		2_11 = 1_16
+		2_11 = 1_17
+		2_11 = 1_18
+		2_11 = 1_19
+		2_11 = 1_20
+		2_12 = 1_1
+		2_12 = 1_3
+		2_12 = 1_5
+		2_12 = 1_6
+		2_12 = 1_7
+		2_12 = 1_10
+		2_12 = 1_11
+		2_12 = 1_13
+		2_12 = 1_14
+		2_12 = 1_15
+		2_12 = 1_16
+		2_12 = 1_17
+		2_12 = 1_18
+		2_12 = 1_19
+		2_12 = 1_20
+		2_13 = 1_2
+		2_13 = 1_4
+		2_13 = 1_9
+		2_14 = 1_1
+		2_14 = 1_3
+		2_14 = 1_5
+		2_14 = 1_6
+		2_14 = 1_7
+		2_14 = 1_10
+		2_14 = 1_11
+		2_14 = 1_13
+		2_14 = 1_14
+		2_14 = 1_15
+		2_14 = 1_16
+		2_14 = 1_17
+		2_14 = 1_18
+		2_14 = 1_19
+		2_14 = 1_20
+		2_15 = 1_12
+		2_16 = 1_2
+		2_16 = 1_4
+		2_16 = 1_9
+		2_17 = 1_1
+		2_17 = 1_3
+		2_17 = 1_5
+		2_17 = 1_6
+		2_17 = 1_7
+		2_17 = 1_10
+		2_17 = 1_11
+		2_17 = 1_13
+		2_17 = 1_14
+		2_17 = 1_15
+		2_17 = 1_16
+		2_17 = 1_17
+		2_17 = 1_18
+		2_17 = 1_19
+		2_17 = 1_20
+		2_18 = 1_2
+		2_18 = 1_4
+		2_18 = 1_9
+		2_20 = 1_1
+		2_20 = 1_3
+		2_20 = 1_5
+		2_20 = 1_6
+		2_20 = 1_7
+		2_20 = 1_10
+		2_20 = 1_11
+		2_20 = 1_13
+		2_20 = 1_14
+		2_20 = 1_15
+		2_20 = 1_16
+		2_20 = 1_17
+		2_20 = 1_18
+		2_20 = 1_19
+		2_20 = 1_20
+
+   Haplotypes shared between "Sample 2" and "Sample 2":
+
+		2_1 = 2_2
+		2_1 = 2_3
+		2_1 = 2_13
+		2_1 = 2_16
+		2_1 = 2_18
+		2_2 = 2_3
+		2_2 = 2_13
+		2_2 = 2_16
+		2_2 = 2_18
+		2_3 = 2_13
+		2_3 = 2_16
+		2_3 = 2_18
+		2_4 = 2_5
+		2_4 = 2_6
+		2_4 = 2_7
+		2_4 = 2_8
+		2_4 = 2_9
+		2_4 = 2_10
+		2_4 = 2_11
+		2_4 = 2_12
+		2_4 = 2_14
+		2_4 = 2_17
+		2_4 = 2_20
+		2_5 = 2_6
+		2_5 = 2_7
+		2_5 = 2_8
+		2_5 = 2_9
+		2_5 = 2_10
+		2_5 = 2_11
+		2_5 = 2_12
+		2_5 = 2_14
+		2_5 = 2_17
+		2_5 = 2_20
+		2_6 = 2_7
+		2_6 = 2_8
+		2_6 = 2_9
+		2_6 = 2_10
+		2_6 = 2_11
+		2_6 = 2_12
+		2_6 = 2_14
+		2_6 = 2_17
+		2_6 = 2_20
+		2_7 = 2_8
+		2_7 = 2_9
+		2_7 = 2_10
+		2_7 = 2_11
+		2_7 = 2_12
+		2_7 = 2_14
+		2_7 = 2_17
+		2_7 = 2_20
+		2_8 = 2_9
+		2_8 = 2_10
+		2_8 = 2_11
+		2_8 = 2_12
+		2_8 = 2_14
+		2_8 = 2_17
+		2_8 = 2_20
+		2_9 = 2_10
+		2_9 = 2_11
+		2_9 = 2_12
+		2_9 = 2_14
+		2_9 = 2_17
+		2_9 = 2_20
+		2_10 = 2_11
+		2_10 = 2_12
+		2_10 = 2_14
+		2_10 = 2_17
+		2_10 = 2_20
+		2_11 = 2_12
+		2_11 = 2_14
+		2_11 = 2_17
+		2_11 = 2_20
+		2_12 = 2_14
+		2_12 = 2_17
+		2_12 = 2_20
+		2_13 = 2_16
+		2_13 = 2_18
+		2_14 = 2_17
+		2_14 = 2_20
+		2_16 = 2_18
+		2_17 = 2_20
+
+---------------------------------------------------------------------
+
+
+
+Haplotype frequency distribution among the samples:
+===================================================
+
+
+Haplotype list
+==============
+Haplotype id                  Haplotype definition
+------------                  --------------------
+   1_1
+   1_3
+   1_5
+   1_6
+   1_7
+   1_10
+   1_11
+   1_13
+   1_14
+   1_15
+   1_16
+   1_17
+   1_18
+   1_19
+   1_20
+   2_4
+   2_5
+   2_6
+   2_7
+   2_8
+   2_9
+   2_10
+   2_11
+   2_12
+   2_14
+   2_17
+   2_20                       GAGT
+   1_2
+   1_4
+   1_9
+   2_1
+   2_2
+   2_3
+   2_13
+   2_16
+   2_18                       GTGA
+   1_8                        GAAT
+   1_12
+   2_15                       GTGT
+   2_19                       TTGT
+
+
+
+Haplotype frequencies in populations
+====================================
+
+</data> <absHapFreq samp="whatever" time="11/09/17 at 17:11:43">
+
+----------------------------------------
+    Haplotype:     Sample 1     Sample 2
+                       (20)         (20)
+----------------------------------------
+ 1_1          
+ 1_3          
+ 1_5          
+ 1_6          
+ 1_7          
+1_10          
+1_11          
+1_13          
+1_14          
+1_15          
+1_16          
+1_17          
+1_18          
+1_19          
+1_20          
+ 2_4          
+ 2_5          
+ 2_6          
+ 2_7          
+ 2_8          
+ 2_9          
+2_10          
+2_11          
+2_12          
+2_14          
+2_17          
+2_20                  15           12   
+                                        
+ 1_2          
+ 1_4          
+ 1_9          
+ 2_1          
+ 2_2          
+ 2_3          
+2_13          
+2_16          
+2_18                   3            6   
+                                        
+ 1_8                   1            0   
+                                        
+1_12          
+2_15                   1            1   
+                                        
+2_19                   0            1   
+                                        
+</absHapFreq> <data>
+
+
+
+Relative frequencies:
+
+</data> <relHapFreq samp="whatever" time="11/09/17 at 17:11:43">
+
+    Haplotype:     Sample 1     Sample 2
+                       (20)         (20)
+----------------------------------------
+ 1_1          
+ 1_3          
+ 1_5          
+ 1_6          
+ 1_7          
+1_10          
+1_11          
+1_13          
+1_14          
+1_15          
+1_16          
+1_17          
+1_18          
+1_19          
+1_20          
+ 2_4          
+ 2_5          
+ 2_6          
+ 2_7          
+ 2_8          
+ 2_9          
+2_10          
+2_11          
+2_12          
+2_14          
+2_17          
+2_20                0.75          0.6   
+                                        
+ 1_2          
+ 1_4          
+ 1_9          
+ 2_1          
+ 2_2          
+ 2_3          
+2_13          
+2_16          
+2_18                0.15          0.3   
+                                        
+ 1_8                0.05            0   
+                                        
+1_12          
+2_15                0.05         0.05   
+                                        
+2_19                   0         0.05   
+                                        
+</relHapFreq> <data>
+
+
+==============================================================================
+== ANALYSES AT THE INTRA-POPULATION LEVEL
+==============================================================================
+</data>
+
+ <A NAME="11_09_17at17_11_43_group0"></A> 
+<data>
+
+
+===============================================================================
+== Sample : 	Sample 1
+===============================================================================
+
+
+===============================
+== Standard diversity indices : (Sample 1)
+===============================
+
+Reference: </data>
+<Reference>Nei, M., 1987.</Reference>
+<data>
+No. of gene copies       : 20
+No. of sequences         : 4
+No. of original 
+sequences in sample      : 20
+No. of loci              : 4
+No. of usable loci       : 4 loci with less than 100.00 % missing data
+No. of polymorphic sites : 3
+
+
+Results are only shown for polymorphic loci
+-------------------------------------------------
+           Num.
+           gene     Num.        Exp.
+Locus#    copies   alleles       Het
+-------------------------------------------------
+     2        20         2   0.33684
+     3        20         2   0.10000
+     4        20         2   0.26842
+-------------------------------------------------
+  Mean    20.000     2.000   0.23509
+  s.d.     0.000     0.000   0.12189
+-------------------------------------------------
+
+
+Haplotype-level computations
+----------------------------
+
+Sum of square freqs.     :  0.5900
+Gene diversity           :  0.4316 +/-  0.1262
+
+(Standard deviation is for the sampling process)
+
+================================
+== Molecular diversity indices : (Sample 1)
+================================
+
+</data>
+<Reference>Tajima, F., 1983.</Reference>
+<Reference>Tajima, F. 1993.</Reference>
+<Reference>Nei, M., 1987.</Reference>
+<Reference>Zouros, E., 1979.</Reference>
+<Reference>Ewens, W.J. 1972.</Reference>
+<data>
+Sample size                                  : 20.0000
+No. of haplotypes                            : 4
+No. of original haplotypes in sample         : 20
+Deletion weight                              : 1.0000
+Transition weight                            : 1.0000
+Transversion weight                          : 1.0000
+Allowed level of missing data                : 100.0000 %
+Number of observed transitions               : 1
+Number of observed transversions             : 2
+Number of substitutions                      : 3
+Number of observed indels                    : 0
+Number of polymorphic sites                  : 3
+Number of observed sites with transitions    : 1
+Number of observed sites with transversions  : 2
+Number of observed sites with substitutions  : 3
+Number of observed sites with indels         : 0
+Number of observed nucleotide sites          : 4
+Number of usable nucleotide sites            : 4
+
+Nucleotide composition (Relative values)
+   C :  0.00%
+   T : 26.25%
+   A : 25.00%
+   G : 48.75%
+   Total :100.00%
+
+
+Distance method                              : Pairwise difference (no Gamma correction)
+
+Mean number of pairwise differences          :     0.705263 +/-     0.554026
+
+Nucleotide diversity (average over loci)     :     0.176316 +/-     0.154692
+
+(Standard deviations are for both the sampling and the stochastic processes)
+
+       Theta(Hom) :     0.565647
+  S.D. Theta(Hom) :     0.292426
+
+         Theta(k) :     1.209105
+95 % confidence interval limits for theta(k) : [     0.398753,     3.370282 ]
+
+         Theta(S) :     0.845609
+    S.D. Theta(S) :     0.540302
+
+        Theta(Pi) :     0.705263
+   S.D. Theta(Pi) :     0.618768
+
+==========================================
+== Tajima's test of selective neutrality : (Sample 1)
+==========================================
+
+</data>
+<Reference>Tajima, F. 1989a.</Reference>
+<Reference>Tajima, F., 1996.</Reference>
+<data>
+Sample size                           :       20
+No. of sites with substitutions (S)   :        3
+Mean No. of pairwise differences (Pi) :  0.70526
+Distance method                       : Pairwise difference (no Gamma correction, indels not taken into account)
+
+Tajima's D                            : -0.44328
+
+===============================================
+== Fu's Fs test of selective neutrality : (Sample 1)
+===============================================
+
+Reference: </data>
+<Reference>Fu, Y. X. (1996).</Reference>
+<data>
+Original No. of alleles      :          20
+Actual No. of # alleles  (k) :           4
+Theta(Pi)                    :     0.70526
+Exp. No. of alleles          :     2.97003
+Fs                           :    -0.79721
+</data>
+
+ <A NAME="11_09_17at17_11_43_group1"></A> 
+<data>
+
+
+===============================================================================
+== Sample : 	Sample 2
+===============================================================================
+
+
+===============================
+== Standard diversity indices : (Sample 2)
+===============================
+
+Reference: </data>
+<Reference>Nei, M., 1987.</Reference>
+<data>
+No. of gene copies       : 20
+No. of sequences         : 4
+No. of original 
+sequences in sample      : 20
+No. of loci              : 4
+No. of usable loci       : 4 loci with less than 100.00 % missing data
+No. of polymorphic sites : 3
+
+
+Results are only shown for polymorphic loci
+-------------------------------------------------
+           Num.
+           gene     Num.        Exp.
+Locus#    copies   alleles       Het
+-------------------------------------------------
+     1        20         2   0.10000
+     2        20         2   0.50526
+     4        20         2   0.44211
+-------------------------------------------------
+  Mean    20.000     2.000   0.34912
+  s.d.     0.000     0.000   0.21805
+-------------------------------------------------
+
+
+Haplotype-level computations
+----------------------------
+
+Sum of square freqs.     :  0.4550
+Gene diversity           :  0.5737 +/-  0.0904
+
+(Standard deviation is for the sampling process)
+
+================================
+== Molecular diversity indices : (Sample 2)
+================================
+
+</data>
+<Reference>Tajima, F., 1983.</Reference>
+<Reference>Tajima, F. 1993.</Reference>
+<Reference>Nei, M., 1987.</Reference>
+<Reference>Zouros, E., 1979.</Reference>
+<Reference>Ewens, W.J. 1972.</Reference>
+<data>
+Sample size                                  : 20.0000
+No. of haplotypes                            : 4
+No. of original haplotypes in sample         : 20
+Deletion weight                              : 1.0000
+Transition weight                            : 1.0000
+Transversion weight                          : 1.0000
+Allowed level of missing data                : 100.0000 %
+Number of observed transitions               : 0
+Number of observed transversions             : 3
+Number of substitutions                      : 3
+Number of observed indels                    : 0
+Number of polymorphic sites                  : 3
+Number of observed sites with transitions    : 0
+Number of observed sites with transversions  : 3
+Number of observed sites with substitutions  : 3
+Number of observed sites with indels         : 0
+Number of observed nucleotide sites          : 4
+Number of usable nucleotide sites            : 4
+
+Nucleotide composition (Relative values)
+   C :  0.00%
+   T : 28.75%
+   A : 22.50%
+   G : 48.75%
+   Total :100.00%
+
+
+Distance method                              : Pairwise difference (no Gamma correction)
+
+Mean number of pairwise differences          :     1.047368 +/-     0.725875
+
+Nucleotide diversity (average over loci)     :     0.261842 +/-     0.202674
+
+(Standard deviations are for both the sampling and the stochastic processes)
+
+       Theta(Hom) :     1.009459
+  S.D. Theta(Hom) :     0.381127
+
+         Theta(k) :     1.209105
+95 % confidence interval limits for theta(k) : [     0.398753,     3.370282 ]
+
+         Theta(S) :     0.845609
+    S.D. Theta(S) :     0.540302
+
+        Theta(Pi) :     1.047368
+   S.D. Theta(Pi) :     0.810698
+
+==========================================
+== Tajima's test of selective neutrality : (Sample 2)
+==========================================
+
+</data>
+<Reference>Tajima, F. 1989a.</Reference>
+<Reference>Tajima, F., 1996.</Reference>
+<data>
+Sample size                           :       20
+No. of sites with substitutions (S)   :        3
+Mean No. of pairwise differences (Pi) :  1.04737
+Distance method                       : Pairwise difference (no Gamma correction, indels not taken into account)
+
+Tajima's D                            :  0.63726
+
+===============================================
+== Fu's Fs test of selective neutrality : (Sample 2)
+===============================================
+
+Reference: </data>
+<Reference>Fu, Y. X. (1996).</Reference>
+<data>
+Original No. of alleles      :          20
+Actual No. of # alleles  (k) :           4
+Theta(Pi)                    :     1.04737
+Exp. No. of alleles          :     3.69168
+Fs                           :     0.09859
+
+
+================================================================================
+== Summary of computations done within populations
+================================================================================
+</data>
+
+ <A NAME="11_09_17at17_11_43_comp_sum_Basic"></A> 
+<data>
+
+
+----------------
+Basic properties
+--------------------------------------------------------------------
+          Statistics    Sample 1    Sample 2        Mean        s.d.
+--------------------------------------------------------------------
+  No. of gene copies          20          20      20.000       0.000
+         No. of loci           4           4       4.000       0.000
+  No. of usable loci           4           4       4.000       0.000
+  No. of polym. loci           3           3       3.000       0.000
+--------------------------------------------------------------------
+</data>
+
+ <A NAME="11_09_17at17_11_43_comp_sum_het"></A> 
+<data>
+
+
+-----------------------
+Expected heterozygosity</data> <sumExpHeterozygosity samp="heteroz" time="11/09/17 at 17:11:43">
+------------------------------------------------------------------
+Locus#    Sample 1    Sample 2        Mean        s.d.   Tot. Het.
+------------------------------------------------------------------
+     1     0.00000     0.10000     0.05000     0.07071     0.05000
+     2     0.33684     0.50526     0.42105     0.11909     0.43077
+     3     0.10000     0.00000     0.05000     0.07071     0.05000
+     4     0.26842     0.44211     0.35526     0.12281     0.35769
+------------------------------------------------------------------
+  Mean     0.17632     0.26184     0.21908     0.06048     0.22212
+  s.d.     0.15402     0.24933     0.20168     0.06740     0.20097
+------------------------------------------------------------------
+</sumExpHeterozygosity> <data>
+
+</data>
+
+ <A NAME="11_09_17at17_11_43_comp_sum_numAll"></A> 
+<data>
+
+
+-----------------
+Number of alleles</data> <sumNumAlleles samp="numAlleles" time="11/09/17 at 17:11:43">
+------------------------------------------------------------------
+Locus#    Sample 1    Sample 2        Mean        s.d. Tot. number
+------------------------------------------------------------------
+     1           1           2       1.500       0.707           2
+     2           2           2       2.000       0.000           2
+     3           2           1       1.500       0.707           2
+     4           2           2       2.000       0.000           2
+------------------------------------------------------------------
+  Mean       1.750       1.750       1.750       0.000       2.000
+  s.d.       0.500       0.500       0.500       0.000       0.000
+------------------------------------------------------------------
+</sumNumAlleles> <data>
+
+</data>
+
+ <A NAME="11_09_17at17_11_43_comp_sum_moldiv"></A> 
+<data>
+
+
+---------------------------
+Molecular diversity indexes</data> <sumMolecDivIndexes samp="moldiv" time="11/09/17 at 17:11:43">
+
+-------------------------------------------------------------------------
+               Statistics    Sample 1    Sample 2        Mean        s.d.
+-------------------------------------------------------------------------
+       No. of transitions           1           0       0.500       0.707
+     No. of transversions           2           3       2.500       0.707
+     No. of substitutions           3           3       3.000       0.000
+            No. of indels           0           0       0.000       0.000
+         No. of ts. sites           1           0       0.500       0.707
+         No. of tv. sites           2           3       2.500       0.707
+      No. of subst. sites           3           3       3.000       0.000  Total:           4
+ No. private subst. sites           1           1       1.000       0.000
+       No. of indel sites           0           0       0.000       0.000
+                       Pi       0.705       1.047     0.87632     0.24190
+
+                  Theta_k     1.20911     1.20911     1.20911     0.00000
+            Theta_k_lower     0.39875     0.39875     0.39875     0.00000
+            Theta_k_upper     3.37028     3.37028     3.37028     0.00000
+                  Theta_H     0.56565     1.00946     0.78755     0.31382
+             s.d. Theta_H     0.29243     0.38113     0.33678     0.06272
+                  Theta_S     0.84561     0.84561     0.84561     0.00000
+             s.d. Theta_S     0.54030     0.54030     0.54030     0.00000
+                 Theta_pi     0.70526     1.04737     0.87632     0.24190
+            s.d. Theta_pi     0.61877     0.81070     0.71473     0.13571
+</sumMolecDivIndexes> <data>
+
+-------------------------------------------------------------------------
+</data>
+
+ <A NAME="11_09_17at17_11_43_comp_sum_neutests"></A> 
+<data>
+
+
+----------------
+Neutrality tests
+------------------------------------------------------------------------------------------------------------
+                                                  Statistics    Sample 1    Sample 2        Mean        s.d.
+------------------------------------------------------------------------------------------------------------
+Tajima's D test
+---------------
+                                                 Sample size          20          20    20.00000     0.00000
+                                                           S           3           3     3.00000     0.00000
+                                                          Pi     0.70526     1.04737     0.87632     0.24190
+                                                  Tajima's D    -0.44328     0.63726     0.09699     0.76406
+                                          Tajima's D p-value        N.A.        N.A.        N.A.        N.A.
+Fu's FS test
+------------
+                                         Real no. of alleles           4           4     4.00000     0.00000
+                                        Orig. no. of alleles          20          20    20.00000     0.00000
+                                                    Theta_pi     0.70526     1.04737     0.87632     0.24190
+                                         Exp. no. of alleles     2.97003     3.69168     3.33085     0.51028
+                                                          FS    -0.79721     0.09859    -0.34931     0.63343
+                                                  FS p-value        N.A.        N.A.        N.A.        N.A.
+------------------------------------------------------------------------------------------------------------
+</data>
+
+ <A NAME="11_09_17at17_11_43_pop_gen_struct"></A> 
+<data>
+
+===============================================================================
+== GENETIC STRUCTURE ANALYSIS
+===============================================================================
+
+
+Number of usable loci for distance computation : 4
+Allowed level of missing data                  : 1.00000
+
+List of usable loci :
+---------------------
+   1     2     3     4  
+
+List of loci with too much missing data :
+-----------------------------------------
+
+NONE
+
+</data>
+
+ <A NAME="11_09_17at17_11_43_pop_pairw_diff"></A> 
+<data>
+
+
+======================================================================================
+== Comparisons of pairs of population samples
+======================================================================================
+
+List of labels for population samples used below:
+-------------------------------------------------
+</data> <pairDistPopLabels time="11/09/17 at 17:11:43">
+
+Label  	Population name
+-----  	---------------
+  1:	Sample 1
+  2:	Sample 2
+</pairDistPopLabels> <data>
+
+
+------------------------
+Population pairwise FSTs
+------------------------
+
+</data> <PairFstMat time="11/09/17 at 17:11:43">
+
+
+Distance method: Pairwise difference
+                     1         2
+           1   0.00000
+           2   0.02632   0.00000
+</PairFstMat> <data>
+
+
+
+---------------------------------------
+Population average pairwise differences
+----------------------------------------
+
+Above diagonal    : Average number of pairwise differences between populations (PiXY)
+Diagonal elements : Average number of pairwise differences within population (PiX)
+Below diagonal    : Corrected average pairwise difference (PiXY-(PiX+PiY)/2)
+
+Distance method: Pairwise difference
+</data> <pairwiseDifferenceMatrix time="11/09/17 at 17:11:43">
+
+                       1          2
+            1    0.70526    0.90000
+            2    0.02368    1.04737
+</pairwiseDifferenceMatrix> <data>
+
+
+
+---------------------------------------------------------
+Delta mu-square distance between all pairs of populations
+---------------------------------------------------------
+
+                                 1               2
+                 1         0.00000
+                 2         0.00000         0.00000
+
+
+********************
+Locus by locus AMOVA:
+********************
+
+Distance method for locus-by-locus analysis: Pairwise difference
+
+List of loci with only one allele:
+----------------------------------
+
+
+</data>
+
+ <A NAME="11_09_17at17_11_43pop_Loc_by_Loc_AMOVA"></A> 
+<data>
+
+
+----------------------------------------
+AMOVA Results for polymorphic loci only:
+----------------------------------------
+
+       Among populations:                                    Within populations:                                 Fixation indices:
+  Locus            SSD   d.f.             Va    % variation            SSD   d.f.             Vb    % variation       FST   P-value
+      1        0.02500      1        0.00000        0.00000        0.95000     38        0.02500      100.00000   0.00000   0.00000
+      2        0.40000      1        0.00947        4.30622        8.00000     38        0.21053       95.69378   0.04306   0.00000
+      3        0.02500      1        0.00000        0.00000        0.95000     38        0.02500      100.00000   0.00000   0.00000
+      4        0.22500      1        0.00237        1.31579        6.75000     38        0.17763       98.68421   0.01316   0.00000
+
+====================================================
+Global AMOVA results as a weighted average over loci
+====================================================
+
+----------------------------------------------------
+AMOVA design and results (average over 4 loci):
+----------------------------------------------------
+
+------------------------------------------------------------------------
+ Source of               Sum of           Variance            Percentage
+ variation               squares          components          variation
+------------------------------------------------------------------------
+ Among
+ populations               0.675             0.01184             2.63158
+
+ Within
+ populations              16.650             0.43816            97.36842
+------------------------------------------------------------------------
+ Total                    17.325             0.45000
+------------------------------------------------------------------------
+
+
+Average F-Statistics over all loci
+ Fixation Indices
+       FST :      0.02632
+
+No permutations were done and significance levels cannot be reported
+
+
+
+////////////////////////////////////////////////////////////////////
+END OF RUN NUMBER 1 (11/09/17 at 17:11:43))
+Total computing time for this run : 0h 0m 0s 2 ms
+////////////////////////////////////////////////////////////////////
+
+
+</data>
+
+</Arlequin>
+

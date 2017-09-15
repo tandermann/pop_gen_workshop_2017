@@ -1,0 +1,31 @@
+//Number of population samples (demes)
+2 samples to simulate :
+//Population effective sizes (number of genes)
+1000
+1000
+//Samples sizes
+5
+5
+//Growth rates : negative growth implies population expansion
+0
+0
+//Number of migration matrices : 0 implies no migration between demes
+2
+//migration matrix
+0.000 0.0005
+0.0001 0.000
+//migration matrix
+0.000 0.000
+0.000 0.000
+//historical event: time, source, sink, migrants, new size, growth rate, migr. matrix 
+2 historical event
+1000 0 0 1 1 0 1
+10000 1 0 1 10 0 1
+//Number of independent loci [chromosome] 
+1 0
+//Per chromosome: Number of linkage blocks
+1
+//per Block: data type, num loci, rec. rate and mut rate + optional parameters
+MICROSAT  10  0.0000  0.0005 0
+
+

@@ -1,0 +1,49 @@
+
+   <!--
+     This frameset document includes the Treeview script.
+     Script found at: http://www.treeview.net
+     Author: Marcelino Alves Martins
+    -->
+
+<html>
+
+<head>
+
+<style>
+   BODY {background-color: white}
+   TD {font-size: 8pt;
+       font-family: verdana,helvetica;
+	   text-decoration: none;}
+   A  {text-decoration: none;
+       color: black}
+
+    .specialClass {font-family:garamond; font-size:12pt;color:green;font-weight:bold;text-decoration:underline}
+</style>
+
+
+<!-- Code for browser detection -->
+<script src="file:////home/tobias/abc_course_exercise/exercise1/ua.js"></script>
+
+<!-- Infrastructure code for the tree -->
+<script src="file:////home/tobias/abc_course_exercise/exercise1/ftiens4.js"></script>
+
+<!-- Execution of the code that actually builds the specific tree.
+     The variable foldersTree creates its structure with calls to
+	  gFld, insFld, and insDoc -->
+<script src="migration_1_1.js"></script>
+
+</head>
+
+<body topmargin=16 marginheight=16>
+
+<!-- Removing this link will make the script stop from working -->
+<div style="position:absolute; top:0; left:0; "><table border=0><tr><td><font size=-2><a style="font-size:7pt;text-decoration:none;color:silver" href="http://www.treemenu.net/" target=_blank>JavaScript Tree Menu</a></font></td></tr></table></div>
+
+<!-- Build the browser's objects and display default view of the tree. -->
+<script>initializeDocument()</script>
+<noscript>
+A tree for site navigation will open here if you enable JavaScript in your browser.
+</noscript>
+
+</html>
+

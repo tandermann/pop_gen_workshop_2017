@@ -1,0 +1,25 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1  ANCSIZE     unif     1000  100000   output
+1  NBOT        unif     10   2000     output
+1  NPOPAF      unif     1000 100000   output
+1  NPOPOOA     unif     10   10000      output
+1  TDIV        unif     10   10000   output
+1  TPLUSDIV    unif     10   10000   hide
+0  MIG         logunif  1e-5 1e-2        output
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+1  TBOT = TDIV+TPLUSDIV   output
+0  RATIO_OOA_EA = NPOPOOA/2000000 hide
+0  RTEA = log(RATIO_OOA_EA)    hide
+0  R1 = RTEA/TDIV             hide
+1  TENDBOT = TBOT+500     hide
+0  RES1 = NBOT/NPOPAF     hide
+0  RES2 = ANCSIZE/NBOT    hide
+

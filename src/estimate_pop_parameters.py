@@ -16,6 +16,7 @@ import os
 import itertools
 import numpy as np
 import random
+import math
 import matplotlib.pyplot as plt
 from Bio import AlignIO
 from Bio.Align import MultipleSeqAlignment
@@ -33,16 +34,20 @@ def read_aln_in_folder(input_dir, aln_format):
 
 
 def drop_sequence_from_alignment_containing_string_in_header(alignment,outgroup):
-    index_counter = 0
-    dropped_counter = 0
-    sequence_list = []
-    for seq in alignment:
-        if not outgroup in seq.id:
-            sequence_list.append(alignment[index_counter])
-        elif outgroup in seq.id:
-            dropped_counter += 1
-        index_counter += 1
-    new_alignment = MultipleSeqAlignment(sequence_list)
+    if outgroup == '':
+        new_alignment = alignment
+        dropped_counter = 0
+    else:        
+        index_counter = 0
+        dropped_counter = 0
+        sequence_list = []
+        for seq in alignment:
+            if not outgroup in seq.id:
+                sequence_list.append(alignment[index_counter])
+            elif outgroup in seq.id:
+                dropped_counter += 1
+            index_counter += 1
+        new_alignment = MultipleSeqAlignment(sequence_list)
     return new_alignment, dropped_counter
 
 
@@ -133,9 +138,13 @@ def plot_expected_heterozyosity(locus_tajima_dict,output_dir):
         y = theta/(theta+1)
         return y
     # create a series of numbers in order to plot the function
+    if len(locus_tajima_dict) > 1:
+        alpha_value = min(1,1/math.log10(len(locus_tajima_dict)))
+    else:
+        alpha_value = 1
     t = np.arange(0.0001, 1000.0, 0.001)
     f=plt.figure()
-    plt.plot(theta_estimates, expected_heterozygosity(theta_estimates), 'ro',label="calculated tajimas-theta-estimator",alpha=0.2)
+    plt.plot(theta_estimates, expected_heterozygosity(theta_estimates), 'ro',label="calculated tajimas-theta-estimator",alpha=alpha_value)
     plt.axis([0.00009, 1005.0, -0.1, 1.1])
     plt.xscale('log')
     plt.plot(t, expected_heterozygosity(t), label="expected heterozygosity function")
@@ -237,6 +246,8 @@ join_and_plot_sfs_data(locus_derived_allele_counts_dict,output_dir)
 
 
 #______________________________NOTES___________________________________________
+
+# calculate Tajima's D from the SFS results
 # find good way to partition data by population
 # what to do with columns containing N's?? (we are excluding them for now)
 
